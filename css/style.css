@@ -136,9 +136,9 @@ main {
 }
 .container-card {
   width: 100%;
-  margin-right: 20px;
-  min-width: 320px;
-  max-width: calc(25% - 20px);
+  margin: 10px;
+  min-width: 312px;
+  max-width: calc(25% - 40px);
 }
 .btn-play {
   width: 106px;
@@ -235,6 +235,7 @@ main {
 .wrap-container {
   overflow-y: scroll;
   height: 100%;
+  padding-right: 20px;
 }
 .container-brochure {
   width: 301px;
