@@ -228,6 +228,21 @@ main {
 .webxloo-chat {
   background: url(../images/webxloo/webxloo_chat.jpg) center center no-repeat;
 }
+.seo {
+  background: url(../images/slideshow/webxloo/seo/bg.jpg) center center no-repeat;
+}
+.about-webxloo {
+  background: url(../images/slideshow/webxloo/seo/bg_about_webxloo.jpg) center center no-repeat;
+}
+.xloo {
+  background: url(../images/slideshow/xloo/xloo_bg.jpg) center center no-repeat;
+}
+.sa-webxloo-lcc {
+  background: url(../images/slideshow/SA/webxloo_lcc.jpg) center center no-repeat;
+}
+.auctionstreaming-slideshow {
+  background: url(../images/slideshow/auctionstreamng/auctionstreaming_bg.jpg) center center no-repeat;
+}
 .container-item {
   display: flex;
   flex-wrap: wrap;
