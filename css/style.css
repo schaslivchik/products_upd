@@ -406,10 +406,12 @@ main {
   display: flex;
   justify-content: space-between;
 }
-/* .carousel-inner img {
+.carousel-inner img {
   height: 100vh;
   width: auto !important;
-} */
+  text-align: center;
+  margin: auto;
+}
 .carousel-control-prev-icon, .carousel-control-next-icon {
   display: inline-block;
   width: 4rem;
