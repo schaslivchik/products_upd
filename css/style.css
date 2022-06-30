@@ -27,6 +27,12 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #d7dde2;
 }
+.nav::-webkit-scrollbar-track {
+  background: #f1f3f5;
+}
+.nav::-webkit-scrollbar-thumb {
+  background: #d4dbe1;
+}
 .body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-image: url(../images/bg.jpg);
@@ -59,7 +65,7 @@ main, iframe {
   background-color: var(--primary-bg-nav-color);
   padding: 40px 25px;
   border-right: 1px solid var(--primary-bg-nav-border);
-
+  overflow-y: auto;
 }
 .accordion-body {
   display: flex;
