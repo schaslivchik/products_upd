@@ -3,6 +3,7 @@ const slideVideos = document.querySelectorAll('video')
 const myCarousel = document.getElementById('carouselExampleControls')
 const activeItem = document.querySelector('.carousel-item')
 const bgScenario = document.querySelector('.alert-banner-scenarion')
+const focusBtnLeft = document.querySelector('.carousel-control-next')
 
 myCarousel.addEventListener('slide.bs.carousel', function () {
    slideVideos.forEach(e => e.pause());
@@ -16,6 +17,7 @@ myCarousel.addEventListener('slid.bs.carousel', function () {
  })
  document.addEventListener("keydown", function (event) {
   if (event.which === 122) {
+    focusBtnLeft.focus();
     activeItem.classList.add('active')
     bgScenario.remove();
   }

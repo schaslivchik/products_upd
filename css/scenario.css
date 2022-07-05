@@ -1,5 +1,7 @@
-.carousel-control-prev, .carousel-control-next {
-  display: none;
+.carousel-control-prev, .carousel-control-next,
+.carousel-control-prev:hover, .carousel-control-prev:focus, .carousel-control-next:hover,
+.carousel-control-next:focus {
+  opacity: 0;
 }
 .alert-banner-scenarion {
   display: flex;
