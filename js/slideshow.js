@@ -10,16 +10,3 @@ document.addEventListener("keydown", function (event) {
 })
 
 
-
-const slideVideos = document.querySelectorAll('video')
-const myCarousel = document.getElementById('carouselExampleInterval')
-myCarousel.addEventListener('slide.bs.carousel', function () {
-   slideVideos.forEach(e => e.pause());
-})
-myCarousel.addEventListener('slid.bs.carousel', function () {
-  const activeSlide = document.querySelector('.active')
-  if(activeSlide.dataset.bsTarget) {
-    activeSlide.querySelector('video').play()
-  } 
- })
-
