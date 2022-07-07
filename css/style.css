@@ -249,6 +249,30 @@ main {
 .auctionstreaming-slideshow {
   background: url(../images/slideshow/auctionstreamng/auctionstreaming_bg.jpg) center center no-repeat;
 }
+.cams3 {
+  background: url(../doc/tradeShows2019/background_preview.jpg) center center no-repeat;
+}
+.dashboard-simcasts {
+  background: url(../doc/tradeShows2019/mobile_dashboard_prev.jpg) center center no-repeat;
+}
+.inapp-crm {
+  background: url(../doc/tradeShows2019/inAppBidder_prev.jpg) center center no-repeat;
+}
+.vir-auctionlink {
+  background: url(../doc/tradeShows2019/vir_prev.jpg) center center no-repeat;
+}
+.ams-trade-show-2017 {
+  background: url(../doc/tradeShows2017/ams_prev.jpg) center center no-repeat;
+} 
+.auctionlink-trade-show-2017 {
+  background: url(../doc/tradeShows2017/auctionlink_prev.jpg) center center no-repeat;
+}
+.simcasts-trade-show-2017 {
+  background: url(../doc/tradeShows2017/simcasts_prev.jpg) center center no-repeat;
+} 
+.table-trade-show-2017 {
+  background: url(../doc/tradeShows2017/table_prev.jpg) center center no-repeat;
+}
 .container-item {
   display: flex;
   flex-wrap: wrap;
