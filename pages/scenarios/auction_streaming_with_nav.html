@@ -7,173 +7,101 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../../css/bootstrap.css">
   <link rel="stylesheet" href="../../css/style.css">
-  <link rel="stylesheet" href="../../css/scenario.css">
+  <link rel="stylesheet" href="../../css/scenarios_with_navs.css">
   <script src="../../js/bootstrap.js"></script>
 
   <title>Slideshow</title>
-  <style>
-    body {
-      overflow: hidden;
-    }
-
-    /* .focus-block {
-      overflow: hidden;
-    } */
-
-    .carousel-indicators {
-      position: absolute;
-      left: 0;
-      z-index: 2;
-      display: flex;
-      justify-content: center;
-      padding: 0;
-      margin: 0;
-      list-style: none;
-      height: 100%;
-      flex-direction: column;
-      max-width: 60px;
-      background: transparent;
-    }
-
-    .carousel-indicators [data-bs-target] {
-      box-sizing: content-box;
-      flex: 0 1 auto;
-      width: auto;
-      height: auto;
-      padding: 0 15px;
-      margin-right: 5px;
-      margin-left: 5px;
-      text-indent: 0;
-      cursor: pointer;
-      background-color: transparent;
-      background-clip: padding-box;
-      border: 0;
-      border-top: none;
-      border-bottom: none;
-      color: #172330;
-      font-weight: 600;
-      margin-bottom: 10px;
-      min-height: 56px;
-      opacity: 1;
-    }
-
-    .carousel-indicators {
-      text-align: left;
-    }
-
-    .carousel-indicators .active {
-      background-color: #172330;
-      color: #fff;
-      opacity: 1;
-      border-radius: 6px;
-      height: 56px;
-    }
-
-    .indicators-inner-container {
-      display: flex;
-      flex-direction: column;
-      background-color: #e3e8ed;
-      height: 100%;
-      width: 260px;
-      position: absolute;
-      left: -260px;
-      transition: 0.3s;
-      padding: 20px 15px;
-    }
-
-    .indicators-inner-container .secondary-item-nav {
-      min-height: 25px;
-      height: 25px;
-      margin-left: 20px;
-    }
-
-    .secondary-item-nav.active {
-      min-height: 25px;
-      height: 25px;
-      background: transparent;
-      color: #124889;
-      height: 20px;
-    }
-
-    .indicators-inner-container button {
-      text-align: left;
-      padding: auto 10px;
-    }
-
-    .indicators-inner-container .item-nav-main {
-      /* margin-bottom: 2px; */
-    }
-
-    .carousel-indicators:hover .indicators-inner-container {
-      left: 0;
-    }
-  </style>
 </head>
 
 
 <body>
-  <div class="focus-block">
-    <h1 class="title">Press <span class="border-btn">F11</span> for Start</h1>
-  </div>
-
   <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-indicators">
-      <div class="indicators-inner-container">
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active item-nav-main" aria-current="true" aria-label="Slide 1">Wholesale Brochure</button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class="secondary-item-nav" aria-current="true" aria-label="Slide 1">page 2-3</button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class="secondary-item-nav" aria-current="true" aria-label="Slide 1">page 4-5</button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" class="secondary-item-nav" aria-current="true" aria-label="Slide 1">page 5-6</button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" class="secondary-item-nav" aria-current="true" aria-label="Slide 1">page 6-7</button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" class="secondary-item-nav" aria-current="true" aria-label="Slide 1">page 8-9</button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" class="secondary-item-nav" aria-current="true" aria-label="Slide 1">page 10-11</button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7" class="secondary-item-nav" aria-current="true" aria-label="Slide 1">page 12-13</button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="8" class="secondary-item-nav" aria-current="true" aria-label="Slide 1">page 13-14</button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="9" class="secondary-item-nav" aria-current="true" aria-label="Slide 1">page 15-16</button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="10" aria-label="Slide 4">Video</button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="11" class="" aria-current="true" aria-label="Slide 1">Roll Ups</button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="12" class="" aria-current="true" aria-label="Slide 1">Slideshow Auctionstreaming</button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="13" class="secondary-item-nav" aria-current="true" aria-label="Slide 1">slide 1</button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="14" class="secondary-item-nav" aria-current="true" aria-label="Slide 1">slide 2</button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="15" class="secondary-item-nav" aria-current="true" aria-label="Slide 1">slide 3</button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="16" class="secondary-item-nav" aria-current="true" aria-label="Slide 1">slide 4</button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="17" class="secondary-item-nav" aria-current="true" aria-label="Slide 1">slide 5</button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="18" class="secondary-item-nav" aria-current="true" aria-label="Slide 1">slide 6</button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="19" class="secondary-item-nav" aria-current="true" aria-label="Slide 1">slide 7</button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="20" class="secondary-item-nav" aria-current="true" aria-label="Slide 1">slide 8</button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="21" class="secondary-item-nav" aria-current="true" aria-label="Slide 1">slide 9</button>
-      </div>
+    <div class="control">
+      <button class="triger-nav"></button>
+      <div class="carousel-indicators">
+        <div class="indicators-inner-container">
+          <div class="nav-blocks">
+            <h3 class="title-nav-slide">Wholesale Brochure</h3>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active secondary-item-nav" aria-current="true" aria-label="Slide 1">Pages 1-2</button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class="secondary-item-nav" aria-current="true" aria-label="Slide 1">Pages 3-4</button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class="secondary-item-nav" aria-current="true" aria-label="Slide 1">Pages 5-6</button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" class="secondary-item-nav" aria-current="true" aria-label="Slide 1">Pages 6-7</button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" class="secondary-item-nav" aria-current="true" aria-label="Slide 1">Pages 7-8</button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" class="secondary-item-nav" aria-current="true" aria-label="Slide 1">Pages 9-10</button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" class="secondary-item-nav" aria-current="true" aria-label="Slide 1">Pages 11-12</button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7" class="secondary-item-nav" aria-current="true" aria-label="Slide 1">Pages 13-14</button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="8" class="secondary-item-nav" aria-current="true" aria-label="Slide 1">Pages 15-16</button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="9" class="secondary-item-nav" aria-current="true" aria-label="Slide 1">Pages 17-18</button>
+          </div>
+          <div class="nav-blocks">
+            <h3 class="title-nav-slide">Video VIR 360</h3>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="10" class="secondary-item-nav" aria-label="Slide 4">Video</button>
+          </div>
+          <div class="nav-blocks">
+            <h3 class="title-nav-slide">Roll Ups</h3>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="11" class="secondary-item-nav" aria-current="true" aria-label="Slide 1">Roll Ups</button>
+          </div>
+          <div class="nav-blocks">
 
+            <h3 class="title-nav-slide">Slideshow Auctionstreaming</h3>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="12" class="secondary-item-nav" aria-current="true" aria-label="Slide 1">Slide 1</button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="13" class="secondary-item-nav" aria-current="true" aria-label="Slide 1">Slide 2</button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="14" class="secondary-item-nav" aria-current="true" aria-label="Slide 1">Slide 4</button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="15" class="secondary-item-nav" aria-current="true" aria-label="Slide 1">Slide 5</button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="16" class="secondary-item-nav" aria-current="true" aria-label="Slide 1">Slide 6</button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="17" class="secondary-item-nav" aria-current="true" aria-label="Slide 1">Slide 7</button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="18" class="secondary-item-nav" aria-current="true" aria-label="Slide 1">Slide 7</button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="19" class="secondary-item-nav" aria-current="true" aria-label="Slide 1">Slide 8</button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="20" class="secondary-item-nav" aria-current="true" aria-label="Slide 1">Slide 9</button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="21" class="secondary-item-nav" aria-current="true" aria-label="Slide 1">Slide 10</button>
+          </div>
+        </div>
+
+      </div>
+      <div class="control-panel-slide">
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon  btn-control" aria-hidden="false"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-play play-slide btn-control active-btn"></button>
+        <button class="carousel-control-play btn-control stop-slide"></button>
+        <button class="carousel-control-next btn-control" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon  btn-control" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
     </div>
+
     <div class="carousel-inner">
-      <div class="carousel-item" data-bs-interval="1000">
+      <div class="carousel-item active">
         <img src="../../images/auctionstreaming/scenarion_1/0.jpg" class="d-block w-100" alt="...">
       </div>
-      <div class="carousel-item" data-bs-interval="1000">
+      <div class="carousel-item">
         <img src="../../images/auctionstreaming/scenarion_1/1.jpg" class="d-block w-100" alt="...">
       </div>
 
-      <div class="carousel-item" data-bs-interval="1000">
+      <div class="carousel-item">
         <img src="../../images/auctionstreaming/scenarion_1/2.jpg" class="d-block w-100" alt="...">
       </div>
-      <div class="carousel-item" data-bs-interval="1000">
+      <div class="carousel-item">
         <img src="../../images/auctionstreaming/scenarion_1/3.jpg" class="d-block w-100" alt="...">
       </div>
-      <div class="carousel-item " data-bs-interval="1000">
+      <div class="carousel-item ">
         <img src="../../images/auctionstreaming/scenarion_1/4.jpg" class="d-block w-100" alt="...">
       </div>
-      <div class="carousel-item " data-bs-interval="1000">
+      <div class="carousel-item ">
         <img src="../../images/auctionstreaming/scenarion_1/5.jpg" class="d-block w-100" alt="...">
       </div>
-      <div class="carousel-item " data-bs-interval="1000">
+      <div class="carousel-item ">
         <img src="../../images/auctionstreaming/scenarion_1/6.jpg" class="d-block w-100" alt="...">
       </div>
-      <div class="carousel-item " data-bs-interval="1000">
+      <div class="carousel-item ">
         <img src="../../images/auctionstreaming/scenarion_1/7.jpg" class="d-block w-100" alt="...">
       </div>
-      <div class="carousel-item " data-bs-interval="1000">
+      <div class="carousel-item ">
         <img src="../../images/auctionstreaming/scenarion_1/8.jpg" class="d-block w-100" alt="...">
       </div>
-      <div class="carousel-item " data-bs-interval="1000">
+      <div class="carousel-item ">
         <img src="../../images/auctionstreaming/scenarion_1/9.jpg" class="d-block w-100" alt="...">
       </div>
       <div class="carousel-item" data-bs-target="video" data-bs-interval="93000">
@@ -181,58 +109,84 @@
           <source src="../../videos/auctionstreaming/VIR 360_2022.mp4">
         </video>
       </div>
-      <div class="carousel-item" data-bs-interval="1000">
+      <div class="carousel-item">
         <img src="../../images/auctionstreaming/scenarion_1/rollaups.jpg" class="d-block w-100" alt="...">
       </div>
-      <div class="carousel-item" data-bs-interval="1000">
+      <div class="carousel-item">
         <img src="../../images/slideshow/auctionstreamng/1_AMS.jpg" class="d-block w-100" alt="...">
       </div>
-      <div class="carousel-item" data-bs-interval="1000">
+      <div class="carousel-item">
         <img src="../../images/slideshow/auctionstreamng/2_Auction link.jpg" class="d-block w-100" alt="...">
       </div>
-      <div class="carousel-item" data-bs-interval="1000">
+      <div class="carousel-item">
         <img src="../../images/slideshow/auctionstreamng/3_Auctioneer Display Interface.jpg" class="d-block w-100" alt="...">
       </div>
-      <div class="carousel-item" data-bs-interval="1000">
+      <div class="carousel-item">
         <img src="../../images/slideshow/auctionstreamng/4_Auction-on-Wheels.jpg" class="d-block w-100" alt="...">
       </div>
-      <div class="carousel-item" data-bs-interval="1000">
+      <div class="carousel-item">
         <img src="../../images/slideshow/auctionstreamng/5_Digital Marketplace.jpg" class="d-block w-100" alt="...">
       </div>
-      <div class="carousel-item" data-bs-interval="1000">
+      <div class="carousel-item">
         <img src="../../images/slideshow/auctionstreamng/6_If-Sale.jpg" class="d-block w-100" alt="...">
       </div>
-      <div class="carousel-item" data-bs-interval="1000">
+      <div class="carousel-item">
         <img src="../../images/slideshow/auctionstreamng/7_In-App Bidder.jpg" class="d-block w-100" alt="...">
       </div>
-      <div class="carousel-item" data-bs-interval="1000">
+      <div class="carousel-item">
         <img src="../../images/slideshow/auctionstreamng/8_Mobile CRM.jpg" class="d-block w-100" alt="...">
       </div>
-      <div class="carousel-item" data-bs-interval="1000">
+      <div class="carousel-item">
         <img src="../../images/slideshow/auctionstreamng/9_Simcast Dashboard.jpg" class="d-block w-100" alt="...">
       </div>
-      <div class="carousel-item" data-bs-interval="1000">
+      <div class="carousel-item">
         <img src="../../images/slideshow/auctionstreamng/10_Simcasts Mobile App.jpg" class="d-block w-100" alt="...">
       </div>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
+
+
   </div>
 
 
   <script>
+    const playBtn = document.querySelector('.play-slide');
+    const nextBtn = document.querySelector('.carousel-control-next');
+    const stopBtn = document.querySelector('.stop-slide');
+    const controlPanelBtns = document.querySelector('.control-panel-slide');
+    const menuSlide = document.querySelector('.triger-nav')
+    const controlPanel = document.querySelector('.control')
     const slideVideos = document.querySelectorAll('video')
-    const myCarousel = document.getElementById('carouselExampleIndicators')
-    const activeItem = document.querySelector('.carousel-item')
-    const focusItem = document.querySelector('.indicators-inner-container')
-    const focusBtnLeft = document.querySelector('.carousel-control-next')
-    const titleBlock = document.querySelector('.focus-block')
+
+    menuSlide.addEventListener('click', function () {
+      controlPanel.classList.toggle('close-open-control')
+      this.classList.toggle('change-icon')
+    })
+
+    var myCarousel = document.querySelector('#carouselExampleIndicators')
+    var carousel = new bootstrap.Carousel(myCarousel, {
+      pause: false,
+      interval: 6000,
+    })
+
+
+    playBtn.addEventListener('click', function () {
+      carousel.cycle();
+    })
+    stopBtn.addEventListener('click', function () {
+      carousel.pause();
+    })
+
+
+
+    controlPanelBtns.addEventListener('click', function () {
+      const buttonsControl = controlPanelBtns.querySelectorAll('.btn-control')
+      buttonsControl.forEach(e => {
+        if (e.classList.contains('active-btn')) {
+          e.classList.remove('active-btn')
+        }
+      })
+      event.target.classList.add('active-btn')
+    })
 
 
     myCarousel.addEventListener('slide.bs.carousel', function () {
@@ -246,25 +200,8 @@
         activeSlide.querySelector('video').play()
       }
     })
-    document.addEventListener("keydown", function (event) {
-      if (event.which === 122) {
-        const innerContaner = document.querySelector('.carousel-inner')
-        innerContaner.querySelector('.carousel-item').classList.add('active')
-        titleBlock.focus();
-        titleBlock.classList.add('title-block-hide')
-        titleBlock.style.display = 'block'
-        titleBlock.style.marginLeft = '260' + 'px';
-      }
-    })
 
-    titleBlock.addEventListener('click', function () {
-      titleBlock.style.display = 'none'
-    })
 
-    focusItem.addEventListener('mouseleave', function () {
-      titleBlock.style.display = 'block'
-      titleBlock.focus();
-    })
   </script>
 
 </html>
