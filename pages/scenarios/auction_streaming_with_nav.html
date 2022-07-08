@@ -156,7 +156,8 @@
     const menuSlide = document.querySelector('.triger-nav')
     const controlPanel = document.querySelector('.control')
     const slideVideos = document.querySelectorAll('video')
-    // const secondaryNav = document.querySelectorAll('.secondary-item-nav')
+    const secondaryNav = document.querySelectorAll('.secondary-item-nav')
+    const buttonsControl = controlPanelBtns.querySelectorAll('.btn-control')
 
     menuSlide.addEventListener('click', function () {
       controlPanel.classList.toggle('close-open-control')
@@ -177,16 +178,23 @@
       carousel.pause();
     })
 
-    // secondaryNav.forEach(nav => {
-    //   nav.addEventListener('click', function () {
-    //     return carousel.pause();
-    //   })
-    // })
+    secondaryNav.forEach(navItem => {
+
+      navItem.addEventListener('click', function () {
+        buttonsControl.forEach(e => {
+          if (e.classList.contains('active-btn')) {
+            e.classList.remove('active-btn')
+          }
+          playBtn.classList.add('active-btn')
+        })
+
+      })
+    })
 
 
 
     controlPanelBtns.addEventListener('click', function () {
-      const buttonsControl = controlPanelBtns.querySelectorAll('.btn-control')
+
       buttonsControl.forEach(e => {
         if (e.classList.contains('active-btn')) {
           e.classList.remove('active-btn')
