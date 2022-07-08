@@ -156,6 +156,7 @@
     const menuSlide = document.querySelector('.triger-nav')
     const controlPanel = document.querySelector('.control')
     const slideVideos = document.querySelectorAll('video')
+    // const secondaryNav = document.querySelectorAll('.secondary-item-nav')
 
     menuSlide.addEventListener('click', function () {
       controlPanel.classList.toggle('close-open-control')
@@ -165,7 +166,7 @@
     var myCarousel = document.querySelector('#carouselExampleIndicators')
     var carousel = new bootstrap.Carousel(myCarousel, {
       pause: false,
-      interval: 6000,
+      interval: 5000,
     })
 
 
@@ -175,6 +176,12 @@
     stopBtn.addEventListener('click', function () {
       carousel.pause();
     })
+
+    // secondaryNav.forEach(nav => {
+    //   nav.addEventListener('click', function () {
+    //     return carousel.pause();
+    //   })
+    // })
 
 
 
