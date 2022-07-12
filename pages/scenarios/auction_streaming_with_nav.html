@@ -105,7 +105,7 @@
         <img src="../../images/auctionstreaming/scenarion_1/9.jpg" class="d-block w-100" alt="...">
       </div>
       <div class="carousel-item" data-bs-target="video" data-bs-interval="93000">
-        <video class="video" width="100%" height="100%" controls>
+        <video class="video video-slide" width="100%" height="100%" controls>
           <source src="../../videos/auctionstreaming/VIR 360_2022.mp4">
         </video>
       </div>
@@ -156,6 +156,8 @@
     const slideVideos = document.querySelectorAll('video')
     const secondaryNav = document.querySelectorAll('.secondary-item-nav')
     const buttonsControl = controlPanelBtns.querySelectorAll('.btn-control')
+    // const videoSlide = document.querySelector('.video-slide');
+
 
     menuSlide.addEventListener('click', function () {
       controlPanel.classList.toggle('close-open-control')
@@ -176,7 +178,6 @@
       carousel.pause();
     })
 
-
     secondaryNav.forEach(navItem => {
       navItem.addEventListener('click', function () {
         buttonsControl.forEach(e => {
@@ -189,7 +190,6 @@
       })
     })
 
-
     controlPanelBtns.addEventListener('click', function () {
       buttonsControl.forEach(e => {
         if (e.classList.contains('active-btn')) {
@@ -198,7 +198,6 @@
       })
       event.target.classList.add('active-btn')
     })
-
 
     myCarousel.addEventListener('slide.bs.carousel', function () {
       slideVideos.forEach(e => e.pause());
@@ -211,6 +210,14 @@
         activeSlide.querySelector('video').play()
       }
     })
+
+    slideVideos.forEach((video) => {
+      video.addEventListener('ended', (e) => {
+        carousel.next()
+      });
+    })
+
+
 
 
   </script>
