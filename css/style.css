@@ -273,6 +273,9 @@ main {
 .table-trade-show-2017 {
   background: url(../doc/tradeShows2017/table_prev.jpg) center center no-repeat;
 }
+.ifsale-promo-video {
+  background: url(../images/auctionstreaming/ifsale_bg_demo.jpg) center center no-repeat;
+}
 .container-item {
   display: flex;
   flex-wrap: wrap;
